@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/thailand.css" />
+    <title>maroc</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-col">
+        <img src="./res/logo.jpg" class="logo" />
+        <div class="content">
+          <h1>Thailande, Description</h1>
+          <p>
+            La Thaïlande appartient à la catégorie des destinations de rêve.Rien
+            qu’à l’évocation de son appellation, on se sent déjà transporté vers
+            un monde à part. La Thaïlande a toujours fait de l'effet aux
+            touristes français.
+          </p>
+          <button type="button">RESERVER NOW</button>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="slider">
+          <img src="./image/thailande.jpg" id="slide" />
+        </div>
+        <div class="slider-content">
+          <h2>Plongée- Koh Yao, Thailande</h2>
+          <hr />
+          <p>
+            Venez découvrir l'incroyable et surprenante diversité des fonds
+            marin au large de l'île de Koh Yao, dans ma mer d'Anaman.
+          </p>
+          <div class="controller">
+            <img src="./res/back.png" id="backbtn" />
+            <div class="vertical-line"></div>
+            <img src="./res/next.png" id="nextbtn" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slide = document.getElementById("slide");
+      var backbtn = document.getElementById("backbtn");
+      var nextbtn = document.getElementById("nextbtn");
+      var slideimages = new Array(
+        "./image/t1.jpg",
+        "./image/t2.jpg",
+        "./image/t3.jpg",
+        "./image/thailande.jpg"
+      );
+      let i = 0;
+      nextbtn.onclick = function () {
+        if (i < 3) {
+          slide.src = slideimages[i + 1];
+          i++;
+        }
+      };
+      backbtn.onclick = function () {
+        if (i > 0) {
+          slide.src = slideimages[i - 1];
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>

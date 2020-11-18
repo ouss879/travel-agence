@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/thailand.css" />
+    <title>maroc</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-col">
+        <img src="./res/logo.jpg" class="logo" />
+        <div class="content">
+          <h1>Nouvelle-Zélande, Description</h1>
+          <p>
+            Pays neuf et peu densément peuplé, la Nouvelle-Zélande est dotée de
+            paysages très variés qui lui ont valu des surnoms tels que "Paradis
+            du Pacifique"
+          </p>
+          <button type="button">RESERVER NOW</button>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="slider">
+          <img src="./image/nouvellezelande.jpg" id="slide" />
+        </div>
+        <div class="slider-content">
+          <h2>Auckland, Nouvelle-Zélande</h2>
+          <hr />
+          <p>
+            Découvrez cette passionnante visite de Hobbiton qui est idéale pour
+            les personnes souhaitant ajouter un peu de fantaisie à leurs
+            vacances
+          </p>
+          <div class="controller">
+            <img src="./res/back.png" id="backbtn" />
+            <div class="vertical-line"></div>
+            <img src="./res/next.png" id="nextbtn" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slide = document.getElementById("slide");
+      var backbtn = document.getElementById("backbtn");
+      var nextbtn = document.getElementById("nextbtn");
+      var slideimages = new Array(
+        "./image/nz1.jpg",
+        "./image/nz2.jpg",
+        "./image/nz3.jpg",
+        "./image/nz4.jpg"
+      );
+      let i = 0;
+      nextbtn.onclick = function () {
+        if (i < 3) {
+          slide.src = slideimages[i + 1];
+          i++;
+        }
+      };
+      backbtn.onclick = function () {
+        if (i > 0) {
+          slide.src = slideimages[i - 1];
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE >
+<html lang="eng">
+  <head>
+    <title>voyage Algérie</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!---------------------------  navbar menu Top ------------------------------------------>
+    <div class="header">
+      <div class="container">
+        <div class="navbar-top1">
+          <ul>
+            <li>
+              <b href=""><img src="./res/phone-call.png" /></b>
+            </li>
+            <li><b href="">+213 (0) 23 787 234</b></li>
+            <li>
+              <b href=""><img src="./res/email.png" /></b>
+            </li>
+            <li><b href="">tourisme@voyage-Algérie.com</b></li>
+          </ul>
+        </div>
+        <div class="navbar-top2">
+          <ul>
+            <li>
+              <a href=""><img src="./res/facebook (1).png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./res/twitter (1).png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./res/instagram.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!---------------------------  navbar menu ------------------------------------------>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="./res/logo.jpg"
+          style="vertical-align: middle"
+          width="130px"
+          height="40px"
+        />
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Séjour en Algérie</a></li>
+          <li><a href="">Voyages</a></li>
+          <li>
+            <img
+              src="./res/icons8-ramadan-48.png"
+              width="30px"
+              height="30px"
+              style="vertical-align: middle"
+            /><a class="page-scroll" href="#Omra">Omra</a>
+          </li>
+          <li><a href="" style="color: #ffe05d">Promo</a></li>
+        </ul>
+      </nav>
+
+      <img src="./res/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+    <!--------------------------------  diaporama des images -------------------------------------->
+    <div class="diapo">
+      <div class="images">
+        <div class="image active">
+          <img src="./image/image1.jpg" alt="image1" />
+          <div class="titre">
+            <h2>LES MALDIVES</h2>
+            <p>PARADIS DES ÎLES-HÔTELS</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/image2.jpg" alt="image2" />
+          <div class="titre">
+            <h2>VACANCES HALAL</h2>
+            <p>STATIONS BALNÉAIRES HALAL AVEC PISCINE PRIVÉE</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/image3.jpg" alt="image3" />
+          <div class="titre">
+            <h2>CROISIÉRES</h2>
+            <p>AVENTUREZ-VOUS SUR LES PLAGES</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/image4.jpg" alt="image4" />
+          <div class="titre">
+            <h2>SAHARA</h2>
+            <p>VERS DE NOUVEAUX HORIZONS</p>
+          </div>
+        </div>
+      </div>
+      <!-- Flèches de navigation -->
+      <i id="nav-gauche" class="las la-chevron-left"></i>
+      <i id="nav-droite" class="las la-chevron-right"></i>
+    </div>
+    <!-- ----------- image--------------- -->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="./image/istockphoto-1124472547-170667a.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./image/istockphoto-1246132138-170667a.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./image/1 (1).jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="./image/2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------- SUGGESTIONS DE DESTINATIONS-------------- -->
+    <div class="small-container">
+      <h2 class="title">NOS SUGGESTIONS DE DESTINATIONS</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./image/photo-1593097765614-404d54cc96ae.jpg" />
+          <h4>Maroc-Marrakech</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>10 jours / 9 nuits</p>
+          <p style="color: blue">Maroc</p>
+          <a href="./Maroc.html" class="btn">Voir plus &#8594;</a>
+        </div>
+        <div class="col-4">
+          <img src="./image/photo-1528022656871-cfb326b4a39a.jpg" />
+          <h4>Thailande-Koh Yao</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>8jours / 7 nuits</p>
+          <p style="color: blue">Thailande</p>
+          <a href="./thailand.html" class="btn">Voir plus &#8594;</a>
+        </div>
+        <div class="col-4">
+          <img src="./image/egypt.jpg" />
+          <h4>Auckland, Zélande</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>8jours / 7 nuits</p>
+          <p style="color: blue">Nouvelle-Zélande</p>
+          <a href="./Zelande.html" class="btn">Voir plus &#8594;</a>
+        </div>
+        <div class="col-4">
+          <img src="./image/dubai.jpg" />
+          <h4>Nam Ham, Laos</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>8jours / 7 nuits</p>
+          <p style="color: blue">Laos</p>
+          <a href="./loas.html" class="btn">Voir plus &#8594;</a>
+        </div>
+      </div>
+      <h2 class="title">Top Destinations</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./image/israelAccueil.png" />
+          <h4>Fidji, Aokama</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>145 000 da</p>
+        </div>
+        <div class="col-4">
+          <img src="./image/laosAccueil.jpg" />
+          <h4>Fidji, Aokama</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>140 000 da</p>
+          
+        </div>
+        <div class="col-4">
+          <img src="./image/marocAccueil.png" />
+          <h4>Maroc</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>130 000 da</p>
+        </div>
+        <div class="col-4">
+          <img src="./image/nouvellezelandeAccueil.jpg" />
+          <h4>Nouvelle-Zelande</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>165 000 da</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="./image/thailandeAccueil.jpg" />
+          <h4>Thailande</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>172 000 da</p>
+        </div>
+        <div class="col-4">
+          <img src="./image/VenezuelaAccueil.jpg" />
+          <h4>Venezuela</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>158 000 da</p>
+        </div>
+        <div class="col-4">
+          <img src="./image/mexiqueAccueil.jpg" />
+          <h4>Mexique</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>120 000 da</p>
+        </div>
+        <div class="col-4">
+          <img src="./image/laosAccueil.jpg" />
+          <h4>Laos</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>110 000 da</p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------- offer--------------- -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./image/maroc.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Les promotions pour le séjour de vos groupes ponctuels</p>
+            <h1>Maroc, Marrakach</h1>
+            <small
+              >Le Maroc, un nom qui évoque des palais entourés de somptueux
+              jardins, des souks animés au parfum d’épices, des rues
+              bourdonnantes de passants et des chevaux fardés comme des
+              princesses, les jours de fantasia..</small
+            >
+            <a href="" class="btn">Voir l'offre &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------testmonial--------------- -->
+    <div class="testmonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              eligendi provident fugiat fugit sequi.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="./res/user-1.png" />
+            <h3>Samir Kay</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              eligendi provident fugiat fugit sequi.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="./res/user-2.png" />
+            <h3>Samir Kay</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+              eligendi provident fugiat fugit sequi.
+            </p>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="./res/user-3.png" />
+            <h3>Samir Kay</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- -----------footer--------------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="app-logo">
+              <img src="./res/play-store.png" alt="" />
+              <img src="./res/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="./res/logo.jpg" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Joint Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instegram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="Copyright">Copyright 2020 - oussama</p>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
