@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/thailand.css" />
+    <title>maroc</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-col">
+        <img src="./res/logo.jpg" class="logo" />
+        <div class="content">
+          <h1>OMRA VIP</h1>
+          <p>
+            Guide durant tous le séjour avec aide et instruction sur Omra
+          </p>
+          <button type="button" onclick="window.location.href='./cart.html'">RESERVER NOW</button>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="slider">
+          <img src="./image/cesar-cid-RQQWfz5Ir0w-unsplash.jpg" id="slide" />
+        </div>
+        <div class="slider-content">
+          <h2>Arabie Saoudite, Madinah</h2>
+          <hr />
+          <p>
+            pèlerinage à la ville sainte de La Mecque (Arabie saoudite).
+          </p>
+          <div class="controller">
+            <img src="./res/back.png" id="backbtn" />
+            <div class="vertical-line"></div>
+            <img src="./res/next.png" id="nextbtn" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slide = document.getElementById("slide");
+      var backbtn = document.getElementById("backbtn");
+      var nextbtn = document.getElementById("nextbtn");
+      var slideimages = new Array(
+        "./image/cesar-cid-RQQWfz5Ir0w-unsplash.jpg",
+        "./image/photo-bk.jpg",
+        "./image/photo-77.jpg",
+        "./image/photo66666666.jpg"
+      );
+      let i = 0;
+      nextbtn.onclick = function () {
+        if (i < 3) {
+          slide.src = slideimages[i + 1];
+          i++;
+        }
+      };
+      backbtn.onclick = function () {
+        if (i > 0) {
+          slide.src = slideimages[i - 1];
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>

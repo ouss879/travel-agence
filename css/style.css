@@ -11,10 +11,9 @@ body {
 
 
 /* ----------- navbar top--------------- -*/
-.header{
-  background-color: #282f35; 
-}
-.container {
+
+.container1 {
+  background-color: #5c6e91; 
   display: flex;
   align-items: center;
   padding: 5px;
@@ -44,71 +43,71 @@ body {
 
 b {
   text-decoration: none;
-  color: black;
-  font-size: 14px;
+  color: white;
+  font-size: 10px;
   align-items: center;
   vertical-align: middle;
-}
-p {
+} 
+/* p {
   color: #555;
 }
-.container {
+.container 1{
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
   
-}
+} 
 /*<!---------------------------  navbar menu ------------------------------------------>*/
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
+#main{
+  width: 100%;
+  
+  
 }
-
-nav {
-  flex: 1;
-  text-align: right;
+nav >img{
+  float: left;
+  height: 70px;
+  width: 180px;
+  margin-left: 25px;
 }
-nav ul {
-  display: inline-block;
-  list-style-type: none;
+nav{
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  line-height: 60px;
 }
 nav ul li {
-  display: inline-block;
-  margin-right: 40px;
+display: inline-block;
+list-style-type: none;
+
+}
+nav ul  {
+float: right;
+margin-right: 30px;
+
+}
+nav ul li a{
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+color: black;
+padding-right: 30px;
+transition: 0.6s all;
+
 }
 
-p {
-  color: #555;
+nav ul li a:hover {
+color: red; 
+font-size: 25px; 
+
 }
 
-a {
-  text-decoration: none;
-  color:black;
-  font-size: 20px;
-  font-weight: 500;
-  
-}
-p {
-  color: #555;
-}
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.menu-icon {
-  width: 28px;
-  margin-left: 20px;
-  display: none;
-}
-li:hover {
-  color: red;
-  border-bottom: 3px solid red;
-}
+ 
 
+
+
+
+/*<!---------------------------  diaporama ------------------------------------------>*/
 .diapo {
   position: relative;
   overflow: hidden;
@@ -158,7 +157,7 @@ li:hover {
   color: white;
   padding-bottom: 15px;
   padding-top: 1px;
-  font-size: 80px;
+  font-size: 4em;
   text-align: center;
   font-weight: bold;
 }
@@ -167,45 +166,7 @@ li:hover {
   font-size: 30px;
   color: white;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Poppins", sans-serif;
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-a {
-  text-decoration: none;
-  color: #555;
-}
-p {
-  color: #555;
-}
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
 .row {
   display: flex;
   align-items: center;
@@ -367,20 +328,20 @@ small {
   background: #000;
   color: #8a8a8a;
   font-size: 14px;
-  padding: 60px 0 20px;
+  padding: 20px 0 1px;
 }
 .footer p {
   color: #8a8a8a;
 }
 .footer h3 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 .footer-col-1,
 .footer-col-2,
 .footer-col-3,
 .footer-col-4 {
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   min-width: 250px;
 }
 .footer-col-1 {
@@ -392,7 +353,7 @@ small {
 }
 .footer-col-2 img {
   width: 180px;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 .footer-col-3,
 .footer-col-4 {
@@ -403,7 +364,7 @@ ul {
   list-style-type: none;
 }
 .app-logo {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .app-logo img {
   width: 140px;
@@ -412,41 +373,42 @@ ul {
   border: none;
   background: #b5b5b5;
   height: 1px;
-  margin: 20px 0;
+  margin: 1px 0;
 }
 .Copyright {
   text-align: center;
 }
-.menu-icon {
-  width: 28px;
-  margin-left: 20px;
-  display: none;
-}
+
 /* ----------- media for menu--------------- -*/
 
 @media only screen and (max-width: 800px) {
-  nav ul {
-    position: absolute;
-    top: 70px;
-    background: #333;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
+  
+ 
+  nav> img{
+    margin: 0 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+   
   }
   nav ul li {
     display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+  
   }
-  nav ul li a {
-    color: #fff;
+ 
+  
+  
+  
+  
   }
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
+  
+  
+ 
+ 
 }
 /* ----------- media for menu screen 600--------------- -*/
 @media only screen and (max-width: 600px) {

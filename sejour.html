@@ -3,40 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/sejoue.css" />
+    <link rel="stylesheet" href="./css/sejour.css" />
     <title>Sejour</title>
   </head>
   <body>
-    <!---------------------------  navbar menu ------------------------------------------>
+     <!---------------------------  navbar menu Top ------------------------------------------>
 
-    <div class="navbar">
-      <img src="/res/logo.jpg" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Séjour en Algérie</a></li>
-          <li><a href="">Voyages</a></li>
-          <li>
-            <img
-              src="./res/icons8-ramadan-48.png"
-              width="30px"
-              height="30px"
-              style="vertical-align: middle"
-            /><a class="page-scroll" href="#Omra">Omra</a>
-          </li>
-          <li><a href="" style="color: #ffe05d">Promo</a></li>
-        </ul>
-      </nav>
-      <img src="./res/menu.png" class="menu-icon" />
+     <div class="header">
+      <div class="container1">
+        <div class="navbar-top1">
+          <ul>
+            <li>
+              <b href=""
+                ><img
+                  src="./res/phone-call.png"
+                  style="vertical-align: middle"
+                />+213 (0) 23 787 234</b
+              >
+            </li>
+
+            <li>
+              <b href=""
+                ><img
+                  src="./res/email.png"
+                  style="vertical-align: middle"
+                />tour@Algérie.com</b
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-top2">
+          <ul>
+            <li>
+              <a href=""><img src="./res/facebook (1).png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./res/twitter (1).png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./res/instagram.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+
+    <!---------------------------  navbar menu ------------------------------------------>
+    <div id="main">
+      <nav>
+        <img src="./res/logo.jpg" width="125px" height="40px" />
+          
+          <ul id="menuitems">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./sejour.html">Nos Séjour </a></li>
+
+            <li>
+              <a class="page-scroll" href="./Omra.html"><img
+                src="./res/icons8-ramadan-48.png"
+                width="35px"
+                height="35px"
+                style="vertical-align: middle"
+              />Omra</a>
+            </li>
+            <li><a href="./cart.html">Réserver</a></li>
+            <li><a href="" style="color: #ffe05d">Compte</a></li>
+          </ul>
+        </nav>
+  </div>
+
     <!-- ----------- presentation------------- -->
     <div class="container">
       <div class="row">
@@ -51,20 +91,20 @@
         </div>
         <div class="col">
           <div class="card card1">
-            <h5>jmaroc,merrakash</h5>
-            <p>jjjjjjjjjjjjjjjjjjjj</p>
+            <h5>Maroc,Merakach</h5>
+            
           </div>
           <div class="card card2">
-            <h5>jmaroc,merrakash</h5>
-            <p>jjjjjjjjjjjjjjjjjjjj</p>
+            <h5>Thailande,Koh Yao</h5>
+            
           </div>
           <div class="card card3">
-            <h5>jmaroc,merrakash</h5>
-            <p>jjjjjjjjjjjjjjjjjjjj</p>
+            <h5>Egypt,Cairo</h5>
+            
           </div>
           <div class="card card4">
-            <h5>jmaroc,merrakash</h5>
-            <p>jjjjjjjjjjjjjjjjjjjj</p>
+            <h5>Auckland, Zélande</h5>
+            
           </div>
         </div>
       </div>
@@ -131,62 +171,46 @@
         </div>
       </div>
     </div>
-    <!-- ----------- Ce que vous attendre-------------- -->
-    <div class="container-vid">
-      <h2 class="title">UN APERÇU DE CE QUI VOUS ATTEND...</h2>
-      <div class="content">
-        <div class="left-col">
-          <h1>Maroc, Marrakech</h1>
-          <p>
-            Le Maroc, ce sont aussi de magnifiques paysages, entre mer et
-            montagne (parfois enneigées), vertes vallées et plaines fertiles,
-            plateaux désertiques et oasis. Les voyageurs en quête de nature et
-            de grands espaces seront comblés.
-          </p>
-        </div>
-        <div class="right-col">
-          <video src="./video/videoplayback.mp4" controls>marakach</video>
-        </div>
-      </div>
-    </div>
+  
+    
      <!-- -----------footer--------------- -->
-     <div class="footer">
-        <div class="container1">
-          <div class="row">
-            <div class="footer-col-1">
-              <h3>Download Our App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="app-logo">
-                <img src="./res/play-store.png" alt="" />
-                <img src="./res/app-store.png" alt="" />
-              </div>
-            </div>
-            <div class="footer-col-2">
-              <img src="./res/logo.jpg" alt="" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="footer-col-3">
-              <h3>Useful Links</h3>
-              <ul>
-                <li>Coupons</li>
-                <li>Blog Post</li>
-                <li>Return Policy</li>
-                <li>Joint Affiliate</li>
-              </ul>
-            </div>
-            <div class="footer-col-4">
-              <h3>Follow us</h3>
-              <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instegram</li>
-                <li>Youtube</li>
-              </ul>
+    <div class="footer">
+      <div class="container2">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Télecharger nos applications sur google play et app store</p>
+            <div class="app-logo">
+              <img src="./res/play-store.png" alt="" />
+              <img src="./res/app-store.png" alt="" />
             </div>
           </div>
-          <hr />
-          <p class="Copyright">Copyright 2020 - oussama</p>
+          <div class="footer-col-2">
+            <img src="./res/logo.jpg" alt="" />
+            <p>Ce sont des spécialistes  qui sont à votre service</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Joint Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instegram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="Copyright">Copyright 2020 - oussama</p>
       </div>
+    </div>
   </body>
 </html>

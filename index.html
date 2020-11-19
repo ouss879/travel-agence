@@ -4,32 +4,46 @@
     <title>voyage Algérie</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!---------------------------  navbar menu Top ------------------------------------------>
+
     <div class="header">
-      <div class="container">
+      <div class="container1">
         <div class="navbar-top1">
           <ul>
             <li>
-              <b href=""><img src="./res/phone-call.png" /></b>
+              <b href=""
+                ><img
+                  src="./res/phone-call.png"
+                  style="vertical-align: middle"
+                />+213 (0) 23 787 234</b
+              >
             </li>
-            <li><b href="">+213 (0) 23 787 234</b></li>
+
             <li>
-              <b href=""><img src="./res/email.png" /></b>
+              <b href=""
+                ><img
+                  src="./res/email.png"
+                  style="vertical-align: middle"
+                />tour@Algérie.com</b
+              >
             </li>
-            <li><b href="">tourisme@voyage-Algérie.com</b></li>
           </ul>
         </div>
         <div class="navbar-top2">
@@ -47,35 +61,32 @@
         </div>
       </div>
     </div>
-    <!---------------------------  navbar menu ------------------------------------------>
-    <div class="navbar">
-      <div class="logo">
-        <img
-          src="./res/logo.jpg"
-          style="vertical-align: middle"
-          width="130px"
-          height="40px"
-        />
-      </div>
+
+    <!-- -------------------------  navbar menu ---------------------------------------- -->
+    <div id="main">
       <nav>
+        <img src="./res/logo.jpg" width="125px" height="40px" />
+
         <ul id="menuitems">
           <li><a href="">Accueil</a></li>
-          <li><a href="">Séjour en Algérie</a></li>
-          <li><a href="">Voyages</a></li>
+          <li><a href="./sejour.html">Nos Séjour </a></li>
+
           <li>
-            <img
-              src="./res/icons8-ramadan-48.png"
-              width="30px"
-              height="30px"
-              style="vertical-align: middle"
-            /><a class="page-scroll" href="#Omra">Omra</a>
+            <a class="page-scroll" href="./Omra.html"
+              ><img
+                src="./res/icons8-ramadan-48.png"
+                width="35px"
+                height="35px"
+                style="vertical-align: middle"
+              />Omra</a
+            >
           </li>
-          <li><a href="" style="color: #ffe05d">Promo</a></li>
+          <li><a href="./cart.html">Réserver</a></li>
+          <li><a href="" style="color: #ffe05d">Compte</a></li>
         </ul>
       </nav>
-
-      <img src="./res/menu.png" class="menu-icon" onclick="menutoggle()" />
     </div>
+
     <!--------------------------------  diaporama des images -------------------------------------->
     <div class="diapo">
       <div class="images">
@@ -124,9 +135,6 @@
           </div>
           <div class="col-3">
             <img src="./image/1 (1).jpg" alt="" />
-          </div>
-          <div class="col-3">
-            <img src="./image/2.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -217,7 +225,6 @@
             <i class="fa fa-star-half-o"></i>
           </div>
           <p>140 000 da</p>
-          
         </div>
         <div class="col-4">
           <img src="./image/marocAccueil.png" />
@@ -311,7 +318,7 @@
               bourdonnantes de passants et des chevaux fardés comme des
               princesses, les jours de fantasia..</small
             >
-            <a href="" class="btn">Voir l'offre &#8594;</a>
+            <a href="./Maroc.html" class="btn">Voir l'offre &#8594;</a>
           </div>
         </div>
       </div>
@@ -319,12 +326,13 @@
     <!-- -----------testmonial--------------- -->
     <div class="testmonial">
       <div class="small-container">
+        <h2 class="title">DES TÉMOIGNAGES DE NOS VOYAGEURS...</h2>
         <div class="row">
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              eligendi provident fugiat fugit sequi.
+              Un voyage extraordinaire. Une nouvelle culture que nous ne connaissions 
+              pas mais vraiment magnifique. Un voyage à refaire
             </p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -339,8 +347,8 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              eligendi provident fugiat fugit sequi.
+              Des plages magnifiques, la nourriture est exquise, 
+              des personnes formidables. Bref un voyage de fou
             </p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -355,8 +363,8 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              eligendi provident fugiat fugit sequi.
+              Ce fut le meilleur voyage de notre vie !! U
+              n confort de fou dans notre hôtel et notre vue était de malade
             </p>
 
             <div class="rating">
@@ -372,14 +380,14 @@
         </div>
       </div>
     </div>
-   
+
     <!-- -----------footer--------------- -->
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="footer-col-1">
             <h3>Download Our App</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Télecharger nos applications sur google play et app store</p>
             <div class="app-logo">
               <img src="./res/play-store.png" alt="" />
               <img src="./res/app-store.png" alt="" />
@@ -387,7 +395,7 @@
           </div>
           <div class="footer-col-2">
             <img src="./res/logo.jpg" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Ce sont des spécialistes qui sont à votre service</p>
           </div>
           <div class="footer-col-3">
             <h3>Useful Links</h3>
